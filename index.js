@@ -2,10 +2,10 @@ const { Client } = require('pg');
 const dbConfig = require('./dbConfig');
 
 const insertData = (temp, humid) => {
-  if (isNaN(temp) || isNaN(humid)) {
-    console.error("Dados inválidos");
-    process.exit(1);
-  }
+  // if (isNaN(temp) || isNaN(humid)) {
+  //   console.error("Dados inválidos");
+  //   process.exit(1);
+  // }
 
   const client = new Client(dbConfig);
 
